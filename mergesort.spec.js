@@ -21,3 +21,9 @@ describe('Merge function', function() {
     // test the merging algorithm
   });
 });
+
+describe('mergeSort function', function() {
+  it('sorts array in ascending order', function() {
+    expect(mergeSort([5, 1, 8, 9])).toEqual([1, 5, 8, 9]);
+  });
+});

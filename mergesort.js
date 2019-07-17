@@ -13,12 +13,19 @@ function split(wholeArray) {
   return [firstHalf, secondHalf];
 }
 
-function merge(arr1, arr,2) {
-
+function merge(arr1, arr2) {
+  return [...arr1, ...arr2];
 }
 
-// function mergeSort(array) {
+function mergeSort(array) {
+  // split until array = 1
+  //base case
+  if (array.length <= 1) {
+    return array;
+  } else {
+    return merge(mergeSort(split(array[0])), mergeSort(split(array[1])));
+  }
 
-//     /* your code here */
-
-// }
+  // compare recursively
+  // merge
+}
